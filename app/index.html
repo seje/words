@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>test</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="shadow">
+    <div id="div">
+      <h3>Результаты</h3>
+      <p id="signs">Знаков: 0 за 60 секунд</p>
+      <div>
+        <button id="reset">Заново</button>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper" onselectstart="return false">
+    <div id="container">
+      <p id="p">Алиса притомилась от безделья. Она сидела на берегу реки, иногда заглядывая в книгу, которую читала сестра, но в ней не было картинок. "А что это за книжка, если в ней нет картинок?" - подумала Алиса. Она стала рассуждать про себя (в той мере в какой это позволял сделать жаркий день, приведший ее в сонное и несколько отупелое состояние) - оправдает ли удовольствие от плетение венка из маргариток тяготы, связанные с вставанием на ноги и собиранием цветов. Но тут Белый Кролик с розовыми глазами прошмыгнул у ее ног. В этом не было НИЧЕГО особенного. И Алиса не нашла ничего особенного в том, что услышала как Кролик пробормотал себе под нос: "Ай-яй-яй! Я опаздываю". (Когда она думала об этом впоследствии, то понимала, что ей надо бы было этому удивиться, но тогда ей все показалось совершенно естественным).</p>
+      <button class="current" id="dot1"></button>
+      <button id="dot2"></button>
+      <button id="dot3"></button>
+      <button id="dot4"></button>
+      <button id="dot5"></button>
+      <div id="text">
+        <div id="top"></div>
+        <textarea placeholder="Введи как можно больше за 60 секунд" id="textarea" disabled="disabled"></textarea>
+        <div id="info"><span id="timer">Время: 60</span>
+          <button id="go">Старт</button>
+          <p id="last_result"> Последний результат: –</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
