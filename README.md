@@ -1,1 +1,1 @@
-<seje.github.io/words>
+<http://seje.github.io/words>
