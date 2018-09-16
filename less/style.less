@@ -20,6 +20,57 @@ button {
 	}
 }
 
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2196f3;
+	z-index: 1000;
+	transition: .6s;
+	#span1,
+	#span2,
+	#span3,
+	#span4,
+	#span5,
+	#span6 {
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		background: #fff;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		opacity: 0;
+	}
+	#span1 {
+		animation: translate 3s .5s infinite ease-in-out;
+		left: calc(42.5% - 200px);
+	}
+	#span2 {
+		animation: translate 3s .4s infinite ease-in-out;
+		left: calc(45.5% - 200px);
+	}
+	#span3 {
+		animation: translate 3s .3s infinite ease-in-out;
+		left: calc(48.5% - 200px);
+	}
+	#span4 {
+		animation: translate 3s .2s infinite ease-in-out;
+		left: calc(51.5% - 200px);
+	}
+	#span5 {
+		animation: translate 3s .1s infinite ease-in-out;
+		left: calc(54.5% - 200px);
+	}
+	#span6 {
+		animation: translate 3s infinite ease-in-out;
+		left: calc(57.5% - 200px);
+	}
+}
+
 #container {
 	width: 1080px;
 	margin: 0 auto;
@@ -209,7 +260,7 @@ button {
 			position: fixed;
 			z-index: 100;
 			opacity: 1;
-			animation: 1s translate ease-out forwards;
+			animation: 1s top_div ease-out forwards;
 			animation-delay: .3s;
 		}
 		h3 {
@@ -246,7 +297,7 @@ button {
 	}
 }
 
-@keyframes translate {
+@keyframes top_div {
 	0% {
 		top: -500px;
 	}
@@ -273,5 +324,23 @@ button {
 	}
 	100% {
 		top: 50%;
+	}
+}
+
+@keyframes translate {
+	0% {
+		opacity: 0;
+		transform: translateX(0);
+	}
+	33% {
+		opacity: 1;
+		transform: translateX(200px);
+	}
+	66% {
+		transform: translateX(200px) scale(0.5);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(400px);
 	}
 }
