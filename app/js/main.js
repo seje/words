@@ -142,3 +142,29 @@ dot5.onclick = function() {
 	addClass(dot5);
 	p.innerHTML = 'Желание видеть супругу вновь здоровой и счастливой помогало любящему мужу преодолеть страх. Дождавшись наступления темноты, он перелез через высокую ограду и очутился в запретном саду. Казалось, сердце мужчины вот-вот выпрыгнет из груди – так сильно оно билось от волнения. Быстро отыскав грядку с травой, супруг нарвал зелени и поспешил домой. Его жене и в самом деле стало значительно легче, после того как она съела немного травы. На следующее утро молодая женщина попросила еще зелени: "Пожалуйста, милый, принеси мне той травки, иначе я не выздоровею!". Поздно ночью ее муж опять пробрался в сад. Но не успел он сорвать и пару стеблей травы, как откуда ни возьмись появилась старая ведьма: "А-а, воришка, попался! Как ты смеешь лазить в мой сад?" — "Умоляю, сжальтесь! Моя жена заболела и просила принести ей немного зелени!"';
 }
+
+
+// <=-----------------------------------------------------------=>
+
+var preloader = document.getElementById('preloader'),
+		span1 = document.getElementById('span1'),
+		span2 = document.getElementById('span2'),
+		span3 = document.getElementById('span3'),
+		span4 = document.getElementById('span4'),
+		span5 = document.getElementById('span5'),
+		span6 = document.getElementById('span6');
+
+document.body.onload = function() {
+	setTimeout(function() {
+		span1.style.display = 'none';
+		span2.style.display = 'none';
+		span3.style.display = 'none';
+		span4.style.display = 'none';
+		span5.style.display = 'none';
+		span6.style.display = 'none';
+		setTimeout(function() {
+			preloader.style.transform = 'translateX(110%)';
+			preloader.style.opacity = '0';
+		}, 500);
+	}, 1000);
+}

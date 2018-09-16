@@ -15,6 +15,56 @@ button {
 button:active {
   transform: scale(0.98);
 }
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2196f3;
+  z-index: 1000;
+  transition: 0.6s;
+}
+#preloader #span1,
+#preloader #span2,
+#preloader #span3,
+#preloader #span4,
+#preloader #span5,
+#preloader #span6 {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  opacity: 0;
+}
+#preloader #span1 {
+  animation: translate 3s 0.5s infinite ease-in-out;
+  left: calc(42.5% - 200px);
+}
+#preloader #span2 {
+  animation: translate 3s 0.4s infinite ease-in-out;
+  left: calc(45.5% - 200px);
+}
+#preloader #span3 {
+  animation: translate 3s 0.3s infinite ease-in-out;
+  left: calc(48.5% - 200px);
+}
+#preloader #span4 {
+  animation: translate 3s 0.2s infinite ease-in-out;
+  left: calc(51.5% - 200px);
+}
+#preloader #span5 {
+  animation: translate 3s 0.1s infinite ease-in-out;
+  left: calc(54.5% - 200px);
+}
+#preloader #span6 {
+  animation: translate 3s infinite ease-in-out;
+  left: calc(57.5% - 200px);
+}
 #container {
   width: 1080px;
   margin: 0 auto;
@@ -207,7 +257,7 @@ button:active {
   position: fixed;
   z-index: 100;
   opacity: 1;
-  animation: 1s translate ease-out forwards;
+  animation: 1s top_div ease-out forwards;
   animation-delay: 0.3s;
 }
 #shadow #div h3 {
@@ -241,7 +291,7 @@ button:active {
   color: #fff;
   font: 1.2em Arial;
 }
-@keyframes translate {
+@keyframes top_div {
   0% {
     top: -500px;
   }
@@ -268,5 +318,22 @@ button:active {
   }
   100% {
     top: 50%;
+  }
+}
+@keyframes translate {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(200px);
+  }
+  66% {
+    transform: translateX(200px) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(400px);
   }
 }
