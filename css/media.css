@@ -1,0 +1,53 @@
+@media screen and (max-width: 1335px) {
+	#container #text textarea {
+		height: 250px;
+	}
+}
+@media screen and (max-width: 1250px) {
+	#container #text {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	#container > p {
+		font: 1.1em/24px Verdana;
+	}
+}
+
+@media screen and (max-width: 1015px) {
+	#container > p {
+		font: 1em/22px Verdana;
+	}
+	#container #info #last_result {
+		font: 1em Verdana;
+		padding: 8px 25px;
+		height: 35px;
+	}
+	#container #info #go {
+		font: 1em Verdana;
+		height: 35px;
+		width: 120px;
+	}
+
+	#container #info #timer {
+		font: 1em Verdana;
+		padding: 8px 25px;
+		height: 35px;
+	}
+	::-webkit-input-placeholder {
+	  font: 1.1em Arial;
+	}
+	#container #text textarea {
+		height: 170px;
+	}
+	#container #info {
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#container > p {
+		font: 0.875em/20px Verdana;
+	}
+}
