@@ -328,6 +328,6 @@ button:active {
   }
   100% {
     opacity: 0;
-    transform: translateX(400px);
+    transform: translateX(400px) scale(0.5);
   }
 }

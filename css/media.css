@@ -4,6 +4,27 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#preloader #span1 {
+		left: calc(40% - 200px);
+	}
+	#preloader #span2 {
+		left: calc(44% - 200px);
+	}
+	#preloader #span3 {
+		left: calc(48% - 200px);
+	}
+	#preloader #span4 {
+		left: calc(52% - 200px);
+	}
+	#preloader #span5 {
+		left: calc(56% - 200px);
+	}
+	#preloader #span6 {
+		left: calc(60% - 200px);
+	}
+}
+
 @media screen and (max-width: 1150px) {
 	#container {
 		width: 90%;
@@ -48,6 +69,27 @@
 	}
 	#container #info {
 		height: 60px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#preloader #span1 {
+		left: calc(35% - 200px);
+	}
+	#preloader #span2 {
+		left: calc(41% - 200px);
+	}
+	#preloader #span3 {
+		left: calc(47% - 200px);
+	}
+	#preloader #span4 {
+		left: calc(53% - 200px);
+	}
+	#preloader #span5 {
+		left: calc(59% - 200px);
+	}
+	#preloader #span6 {
+		left: calc(65% - 200px);
 	}
 }
 
