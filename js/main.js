@@ -166,5 +166,5 @@ document.body.onload = function() {
 			preloader.style.transform = 'translateX(110%)';
 			preloader.style.opacity = '0';
 		}, 500);
-	}, 10000000);
+	}, 1000);
 }
