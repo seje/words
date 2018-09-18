@@ -3,43 +3,48 @@
 		height: 250px;
 	}
 }
-@media screen and (max-width: 1250px) {
-	#container #text {
-		margin-bottom: 50px;
-	}
-}
 
 @media screen and (max-width: 1150px) {
-	#container > p {
-		font: 1.1em/24px Verdana;
+	#container {
+		width: 90%;
 	}
-}
-
-@media screen and (max-width: 1015px) {
+	#container #dot1,
+	#container #dot2,
+	#container #dot3,
+	#container #dot4,
+	#container #dot5 {
+		right: -25px;
+	}
+	#container #text textarea {
+		height: 150px;
+	}
 	#container > p {
-		font: 1em/22px Verdana;
+		font: 1em/24px Verdana;
+	}
+	#container #info {
+		height: 70px;
 	}
 	#container #info #last_result {
 		font: 1em Verdana;
 		padding: 8px 25px;
 		height: 35px;
+		margin: 13px 0 0 20px;
 	}
 	#container #info #go {
 		font: 1em Verdana;
 		height: 35px;
 		width: 120px;
+		margin: 13px 20px 0 0;
 	}
 
 	#container #info #timer {
 		font: 1em Verdana;
 		padding: 8px 25px;
 		height: 35px;
+		margin: 13px 20px 0 0;
 	}
 	::-webkit-input-placeholder {
-	  font: 1.1em Arial;
-	}
-	#container #text textarea {
-		height: 170px;
+	  font: 1.2em Arial;
 	}
 	#container #info {
 		height: 60px;

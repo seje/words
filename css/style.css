@@ -1,7 +1,6 @@
 body {
   background: url('../img/backgrounds.jpg') no-repeat 0 15%;
   background-size: cover;
-  min-width: 950px;
 }
 * {
   margin: 0;
@@ -72,7 +71,6 @@ button:active {
   position: relative;
 }
 #container > p {
-  min-width: 668px;
   background: #EFE9F4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   color: #151B1A;
@@ -153,7 +151,6 @@ button:active {
 #container #text {
   position: relative;
   width: 100%;
-  min-width: 668px;
   margin-top: 30px;
   border-radius: 5px;
   background: #fff;
@@ -167,7 +164,6 @@ button:active {
 #container #text textarea {
   display: block;
   width: 100%;
-  min-width: 668px;
   height: 300px;
   padding: 10px 20px;
   font: 1.3em Arial, sans-serif;
