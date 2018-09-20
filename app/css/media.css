@@ -1,6 +1,9 @@
-@media screen and (max-width: 1335px) {
+@media screen and (max-width: 1400px) {
 	#container #text textarea {
-		height: 250px;
+		height: 200px;
+	}
+	#container {
+		width: 80%;
 	}
 }
 
